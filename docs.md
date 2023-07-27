@@ -2,6 +2,24 @@
 
 The Metasale module offers various token options, ICO options, and additional functionalities for managing tokens and ICOs. This documentation provides an overview of the different components and controls available in Metasale.
 
+## Completed Tasks
+
+1. Backend structure and APIs
+2. Smart contract for ICO
+3. Frontend module (around 80% completed)
+4. Admin structure and modules
+5. ICO hosting in beta stage (pending testing with smart contract)
+
+## Pending Tasks
+
+1. End User Documentation
+2. Admin Panel (just started)
+3. ICO Panel end-user testing
+4. Multisender and Airdrop contract integration
+5. Code optimization
+6. Panel for auditors to audit contracts and upload data
+
+
 ## Token Options
 
 Metasale supports four types of tokens:
@@ -58,6 +76,14 @@ The KYC and Auditing Panel offers the following controls:
 
 1. Add an audit of a specific coin or ICO.
 2. Track all ICOs audited by a particular auditing team or partner.
+
+## All Website Links
+
+* [Docs](https://docs.shibx.net/)
+* [Website](https://ico.shibx.net/)
+* [Admin](https://admin.shibx.net/)
+* [API](https://api.shibx.live/)
+
 
 ## GitHub Repositories
 
