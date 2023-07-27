@@ -173,13 +173,13 @@ const Finished = () => {
           <td className="hello">https://testnet.bscscan.com</td>
         </tr>
       </table>
-      <div className="MetaSale_factory_address_main">
-        <div className="MetaSale_factory_address">
-          Please exclude MetaSale Factory address
+      <div className="Metasale_Admin_factory_address_main">
+        <div className="Metasale_Admin_factory_address">
+          Please exclude Metasale_Admin Factory address
           0x1ec1De50df7Eea94eC7F471a914c922167b23F5D
         </div>
-        <div className="MetaSale_factory_address">
-          Please exclude MetaSale Factory address
+        <div className="Metasale_Admin_factory_address">
+          Please exclude Metasale_Admin Factory address
           0x1ec1De50df7Eea94eC7F471a914c922167b23F5D
         </div>
       </div>

@@ -23,12 +23,12 @@ form{
     margin-top: 10px;
 }
 
-.MetaSale_finance_url a {
+.Metasale_Admin_finance_url a {
     text-decoration: none;
     color: #FA6200;
 }
 
-.MetaSale_finance_url a:hover {
+.Metasale_Admin_finance_url a:hover {
     text-decoration: none;
     color: #000;
     transition: all 0.3s;

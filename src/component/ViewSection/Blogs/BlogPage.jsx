@@ -390,7 +390,7 @@ const Blog = () => {
         <div className="view_details_right">
           <div className="cart_div">
             <div className="cart_heading_div">
-              <p>Make sure the website is MetaSale.finance!</p>
+              <p>Make sure the website is Metasale_Admin.finance!</p>
             </div>
             <div className="timer_div">
               <div>

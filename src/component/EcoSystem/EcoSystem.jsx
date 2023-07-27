@@ -10,7 +10,7 @@ const EcoSystem = () => {
         <div className='launchpad_main'>
           <div className='launchpad_protocol_text'>
             <h1>A Growing Protocol Ecosystem.</h1>
-            <p>We build a suite of tools for the world of decentralized finance. PinkMoon, MetaSale, PinkElon PinkLock, PinkSwap, we Pink everything!</p>
+            <p>We build a suite of tools for the world of decentralized finance. PinkMoon, Metasale_Admin, PinkElon PinkLock, PinkSwap, we Pink everything!</p>
           </div>
         </div>
       </div>

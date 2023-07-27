@@ -38,8 +38,8 @@ const CreateAirdrop = () => {
             <p style={{ color: "#3298dc" }}>
               URL must end with a supported image extension png, jpg, jpeg or
               gif. You can upload your image at{" "}
-              <span className="MetaSale_finance_url">
-                <a href="">https://upload.MetaSale.finance/</a>
+              <span className="Metasale_Admin_finance_url">
+                <a href="">https://upload.Metasale_Admin.finance/</a>
               </span>{" "}
             </p>
           </div>
@@ -147,7 +147,7 @@ const CreateAirdrop = () => {
           </div>
           <footer>
             <div className='footer container'>
-              <p>Disclaimer: MetaSale will never endorse or encourage that you invest in any of the projects listed and therefore, accept no liability for any loss occasioned. It is the user(s) responsibility to do their own research and seek financial advice from a professional. More information about (DYOR) can be found via <span>Binance Academy</span></p>
+              <p>Disclaimer: Metasale_Admin will never endorse or encourage that you invest in any of the projects listed and therefore, accept no liability for any loss occasioned. It is the user(s) responsibility to do their own research and seek financial advice from a professional. More information about (DYOR) can be found via <span>Binance Academy</span></p>
             </div>
           </footer>
         </div>

@@ -63,8 +63,8 @@ const AddAdditionalInfo = () => {
             <p style={{ color: "#3298dc" }}>
               URL must end with a supported image extension png, jpg, jpeg or
               gif. You can upload your image at{" "}
-              <span className="MetaSale_finance_url">
-                <a href="">https://upload.MetaSale.finance/</a>
+              <span className="Metasale_Admin_finance_url">
+                <a href="">https://upload.Metasale_Admin.finance/</a>
               </span>{" "}
             </p>
           </div>

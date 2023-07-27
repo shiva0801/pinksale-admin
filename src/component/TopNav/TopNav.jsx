@@ -91,7 +91,7 @@ const TopNav = (props) => {
                 fontWeight: "400",
               }}
             >
-              MetaSale
+              Metasale Admin Panel
             </p>
           </div>
           <div>
