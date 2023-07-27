@@ -1,0 +1,147 @@
+.difilaunchpad_section{
+    width: 100%;
+    padding: 16px;
+    background-color: #ffffff;
+    margin-top: 16px;
+}
+
+form{
+    width: 100%;
+    display: block;
+}
+
+form p{
+    font-family: 'Segoe UI';
+    padding: 0!important;
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+label{
+    font-weight: 500;
+}
+
+input{
+    background: transparent;
+    padding:10px 14px !important;
+    outline-color: #FA6200;
+    color: #000;
+}
+
+
+.whitelist{
+    display: block;
+    margin-left: 0!important;
+}
+
+.bnb_description{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  
+}
+
+.bnb_description_left_main{
+    width: 49%;
+    display: block;
+}
+
+.bnb_description_right_main{
+    width: 49%;
+    display: block;
+    /* margin-top: 10px; */
+} 
+
+.pos_num{
+    width: 100%;
+    display: block;
+}
+
+.liquidity_percentage_text {
+    margin-top: 16px;
+    }
+    
+    
+
+.liquidity_percentage_text p{
+margin-top: -6px;
+color: #3298dc;
+}
+
+.select_time_section{
+    margin-top: 20px;
+}
+
+.select_time_section p{
+font-size: 14px;
+font-weight: 600;
+font-family: 'Segoe UI';
+}
+
+.liquidity_lockup_section{
+    width: 100%;
+}
+
+.back_and_next_button_section{
+    display: block;
+    text-align: center;
+    margin-top: 16px;
+}
+
+.back_and_next_button_section p{
+    margin-top: 26px!important;
+}
+
+.create_launchedpad_text{
+    font-size: 14px;
+    font-family: 'Segoe UI';
+    color: #3298dc;
+}
+
+.back_and_next_button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 14px;
+}
+
+.back_button{
+padding: 6px 14px;
+margin-right: 8px;
+font-size: 14px;
+border: 1px solid #d9d9d9;
+background:transparent;
+cursor: pointer;
+font-family: 'Segoe UI';
+}
+
+.next_button{
+    padding: 6px 14px;
+    font-size: 14px;
+    border: 1px solid #d9d9d9;
+    cursor: pointer;
+    font-family: 'Segoe UI';
+}
+.disable_enable .ant-checkbox-inner {border-radius: 15px;
+}
+
+.disable_enable .ant-checkbox-checked:after{
+    border-radius: 15px;
+}
+
+@media screen and (max-width:960px){
+    .bnb_description{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap!important;
+      
+    }
+
+    .bnb_description_left_main{
+        width: 100%!important;
+    }
+
+    .bnb_description_right_main{
+        width: 100%!important;
+    }
+}

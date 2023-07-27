@@ -1,0 +1,44 @@
+.finished_table_data_section{
+width: 100%;
+padding: 16px 0;
+background-color:#ffffff;
+margin-top: 16px;
+}
+
+table{
+    width: 100%;
+}
+
+td{
+    font-size: 15px;
+    font-family: 'Segoe UI';
+    font-weight: 400;
+}
+
+.hello{
+    text-align: right;
+    color: #3298DC;
+}
+
+.MetaSale_factory_address_main{
+    padding: 0 22px;
+    margin-top: 24px;
+}
+
+.MetaSale_factory_address{
+    width: 100%!important;
+    padding: 5px;
+    background-color:#fffbe6 ;
+    text-align: center;
+    border:  1px solid #ffe585;
+    margin-top: 10px;
+    font-size: 14px;
+    padding: 10px;
+    font-family: 'Segoe UI';
+    border-radius: 4px;
+}
+
+.back_and_next_button_section{
+    margin-top: -10px;
+}
+

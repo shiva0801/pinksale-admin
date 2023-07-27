@@ -1,0 +1,52 @@
+PinkSale Module Overview Details
+token Options => 4
+1. Standard Tokens
+2. BuyBack Tokens
+3. Baby Tokens
+4. Liquidity Generator Token
+
+ico option and interconnection  =>
+* all ico are connected to token locker to fetch locking data easily
+* all ico are deployed from parent contract instance. so no one can manipulate ico contract and also to maintain records
+
+==> ico options <==
+1. lounchPad
+2. FairLounch
+3. DutchAuction
+4. PrivateSale
+5. Subscription
+
+other option => 
+* multisender
+* airdrops
+
+
+==> Panels for Pinksale <==
+* Admin Panel 
+* Audit and Kyc Panels Which Will be distributed to auditer and Kyc Partners
+* user Panel or client panel 
+
+==> Controls in User Panel <==
+all functionality of Pinksale
+
+==> Controls in admin Panel <==
+1. Admin can check status of all live icos and also can blacklist ico from platform so that specific ico will be not avilable on platform.
+2. Add new Kyc and Auditing Partners and also check statistics of those Partners.
+3. Admin can Check All information And Also can Control Trending List of Ico Platform
+
+==> Controls in Kyc And Auditing Panel <==
+1. Add Audit of specific coin or ico.
+2. Track all Icos which is Audited by that Auditing team Or Partner.
+
+==> All Github Reposiratory <==
+https://github.com/web5lab/Pinksale-Kyc-Panel
+https://github.com/web5lab/Pinksale-Admin
+https://github.com/web5lab/pinksale_backend
+https://github.com/web5lab/pinksale_SmartContract
+https://github.com/Dsahrath-Metaversity/pinksale-frontend
+
+==> Token Deployment Links <==
+Liquidity Generator Token :https://testnet.bscscan.com/tx/0x653ffda81b24878d24b1239d7cb91eeae3aa694474f707baecf8f12a8e741bdd,
+Baby Token : https://testnet.bscscan.com/tx/0x30f0349b1c25938f2ae4709a818fba854143ad14b3b65a5ab5060836fd62a5a1
+Standard Token: https://testnet.bscscan.com/tx/0xf2472d601c501bc31776e65e1ca03519cfcedb13d0c3ffb3346ec2282d5f1488
+BuyBack Baby Token: https://testnet.bscscan.com/tx/0xedd58d37d85c0c252b36c3332aed9c17680bd2700821bb1ddbbb346a97c0298c

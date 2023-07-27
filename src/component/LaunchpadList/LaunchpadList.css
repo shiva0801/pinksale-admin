@@ -1,0 +1,243 @@
+.container {
+    width: 100%;
+    max-width: 1020px;
+    margin: 0 auto;
+}
+
+.sub_container {
+    display: block;
+}
+
+.heading h1 {
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 44px;
+}
+
+.ant-tabs-nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 16px;
+    gap: 10px;
+    width: 100%;
+}
+.all_launchpad_section .ant-tabs-nav-list{
+    margin: auto;
+}
+.launchpad_items a {
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    margin: 0 16px;
+    text-decoration: none;
+    color: unset;
+    padding: 12px 0;
+    text-align: center;
+
+}
+
+.activeMode {
+    border-bottom: 2px solid #FA6200;
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 25px;
+    color: #FA6200;
+    transition: all 0.3s;
+}
+
+.main_input_box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow-x: scroll;
+    padding: 10px;
+    width: 100%;
+}
+.main_input_box-left-col{
+    width: 50%;
+}
+
+.main_input_box input {
+    background: #FFFFFF;
+    border: 1px solid #D9D9D9;
+    border-radius: 59px;
+    margin-top: 1.2rem;
+}
+.fillterVal{
+    /* width: 540px; */
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    padding: 3px 4px;
+}
+.subFillterVal{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.subFillterVal .ant-select{
+    width: 95% !important;
+}
+.subFillterVal label{
+    margin-left: 6px;
+    padding-bottom: 3px;
+    font-size: 12px;
+}
+
+.fillterVal div div{
+    width: 120px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    margin-right: 2px;
+    margin-left: 4px;
+
+}
+.card_Item{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+    padding: 0 10px;
+}
+
+/* .ant-tabs-tab-btn {
+    color: #fe6200;
+    text-shadow: 0 0 0.25px currentcolor;
+} */
+
+/* .ant-tabs-tab .ant-tabs-tab-active{
+    color: #fe6200;
+ } */
+
+
+@media screen and (max-width:768px){
+    .card_Item{
+        width: 100%;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .ant-tabs-nav{
+        overflow-x:scroll;
+        padding: 7px!important;
+    }
+    
+
+    .main_input_box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .main_input_box-left-col{
+        width: 100%;
+    }
+
+    .fillterVal{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 3px 10px;
+        margin-top: 5px;
+    }
+
+    .main_input_box input {
+        /* width: 310px; */
+        background: #FFFFFF;
+        border: 1px solid #D9D9D9;
+        border-radius: 59px;
+        margin-top: 1.2rem;
+    }
+
+    .launchpad_items a {
+        margin: 0;
+        /* padding: 12px 0; */
+    }
+
+    .subFillterVal{
+        margin-top: 6px;
+    }
+    
+    .launchpad_items{
+       white-space: nowrap;
+    }
+
+    .fillterVal div div {
+        margin-right: 29px;
+        margin-left: 4px;
+    }
+
+    .heading h1 {
+        padding: 0 10px;
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:1000px){  
+    .card_Item{
+        width: 100%;
+        justify-content: center;
+        gap:0 30px;
+    }
+}
+
+.all_launchpad_section .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn{
+    color: #FA6200 !important;
+}
+
+.ant-tabs-tab-btn:hover{
+    color: #FA6200 !important;
+}
+
+
+.ant-tabs .ant-tabs-ink-bar{
+    position: absolute;
+    background: #fe6200!important;
+    pointer-events: none;
+}
+
+.main_input_box input{
+    /* width: 539px; */
+    background: #FFFFFF;
+    border: 1px solid #D9D9D9;
+    border-radius: 59px;
+    margin-top: 1.2rem;
+}
+
+.main_input_box input:hover{
+    border: 1px solid #fe6200;
+}
+
+ .ant-select-selector:hover{
+    border: 1px solid #fe6200;
+}
+
+.ant-select-selector {
+    position: relative;
+    background-color: #ffffff;
+    border: 1px solid #d9d9d9;
+    transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+
+
+
+
+
+@media screen and (max-width:420px){
+    .subFillterVal{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+}

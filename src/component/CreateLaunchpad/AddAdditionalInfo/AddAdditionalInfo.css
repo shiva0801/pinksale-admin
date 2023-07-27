@@ -1,0 +1,70 @@
+.addadditional_form_section_main {
+    width: 100%;
+    padding: 20px;
+    background-color: #ffffff;
+    margin-top: 20px;
+}
+
+span.ant-input-affix-wrapper {
+    height: 37px;
+    margin-top: 9px;
+}
+
+/* input.ant-input.css-dev-only-do-not-override-yp8pcc {
+    padding: 0 !important;
+} */
+
+form{
+    font-family: 'Segoe UI';
+    font-size: 14px;
+}
+
+.youtube_input_box{
+    margin-top: 10px;
+}
+
+.MetaSale_finance_url a {
+    text-decoration: none;
+    color: #FA6200;
+}
+
+.MetaSale_finance_url a:hover {
+    text-decoration: none;
+    color: #000;
+    transition: all 0.3s;
+}
+
+/* .bnb_description_left_main {
+    margin-top: 20px;
+} */
+
+.bnb_description_right_main {
+    /* margin-top: 20px; */
+}
+
+.liquidity_lockup_section{
+    margin-top: 16px;
+}
+
+.back_and_next_button_section{
+    margin-top: 16px;
+}
+
+#description_field{
+display: block;
+width: 100%!important;
+min-height: 8em;
+margin-top: 10px;
+font-family: 'Segoe UI';
+border :1px solid rgb(210, 208, 208);
+padding: 10px;
+color: rgb(172, 171, 171);
+font-size: 14px;
+font-weight: 400;
+}
+
+@media screen and (max-width:768px){
+    .bnb_description_left_main {
+        margin-top: 10px!important;    
+}
+}

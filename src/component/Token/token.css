@@ -1,0 +1,108 @@
+
+.token_main{
+  display: block;
+  width: 100%;
+  background-color: #ffffff;
+  padding:16px;
+  margin-top: 50px;
+}
+
+.text_content{
+  display: block;
+}
+
+.text_content p{
+ padding: 0 8px!important;
+ font-size: 14px;
+}
+
+table{
+  width: 100%;
+  /* padding: 20px; */
+  /* margin-top: 30px!important; */
+}
+
+
+input{
+  border: 1px solid rgb(212, 207, 207);
+  font-family: 'Segoe UI';
+  font-size: 16px!important;
+}
+
+
+.ant-tabs-tab-btn {
+  color: #000!important;
+  text-shadow: 0 0 0.25px currentcolor;
+  margin-top: 10px;
+}
+
+.token_main .ant-tabs-nav-wrap{
+  justify-content: end;
+  padding: 0 5px;
+  border: none;
+}
+
+table tr td{
+  padding: 0!important;
+}
+
+
+.token_details{
+  display: flex;
+  align-items: center;
+}
+
+.token_details img{
+  width: 40px;
+  margin-right: 5px;
+}
+
+/* th{
+  width: 45%!important;
+} */
+
+.data{
+  width: 50%;
+}
+
+td a:hover{
+color: #000;
+}
+
+.pagination_container{
+width: 100%;
+padding: 30px 0!important; 
+text-align: center;
+display: flex;
+align-items: center;
+justify-content: center;
+} 
+
+.ant-pagination-item-active {
+  font-weight: 600;
+  background-color: #ffffff;
+  border-color: #fe6200!important;
+  color: #000;
+}
+
+.ant-pagination-item-active a {
+  color: grey!important;
+}
+
+/* .ant-pagination {
+   cursor: pointer;
+} */
+
+@media screen and (max-width:768px){
+  /* .pagination_container{
+    width: 200%;
+    padding: 30px!important; 
+    }  */
+
+    /* .ant-pagination {
+      width: 100%;
+      display: flex;
+      text-align: center;
+      justify-content: center!important;
+  } */
+}

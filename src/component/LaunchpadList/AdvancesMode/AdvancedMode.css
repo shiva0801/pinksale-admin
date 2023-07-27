@@ -1,0 +1,185 @@
+.current_presale_main {
+    width: 100%;
+    padding: 16px;
+}
+
+.heading {
+    padding: 0 18px;
+}
+
+/* .container{
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+} */
+
+.table_data {
+    width: 100%;
+    margin: auto;
+    background-color: #ffffff;
+    padding: 16px;
+}
+
+table {
+    width: 100%;
+}
+
+.name_section {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 8px;
+    border-right: 1px solid rgb(197, 194, 194);
+    margin-right: 10px;
+}
+
+.hc {
+    display: flex;
+    justify-content: space-between;
+    border-right: 1px solid rgb(197, 194, 194);
+    margin-right: 5px;
+    padding-right: 8px;
+
+}
+
+
+.icon {
+    display: flex;
+    cursor: pointer;
+    color: rgb(154, 156, 157);
+}
+
+.coin {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-right: 1px solid rgb(197, 194, 194);
+    padding-right: 8px;
+    margin-right: 8px;
+}
+
+.InitialCap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-right: 1px solid rgb(197, 194, 194);
+    margin-right: 8px;
+    padding-right: 8px;
+}
+
+.kycaudit {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-right: 1px solid rgb(197, 194, 194);
+    margin-right: 8px;
+    padding-right: 8px;
+}
+
+.Status {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-right: 1px solid rgb(197, 194, 194);
+    padding-right: 8px;
+    margin-right: 8px;
+}
+
+.links {
+    border-right: 1px solid rgb(197, 194, 194);
+    padding-right: 8px;
+    margin-right: 8px;
+}
+
+.TGOnline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-right: 1px solid rgb(197, 194, 194);
+    padding-right: 8px;
+    margin-right: 8px;
+}
+
+.countdown {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-right: 1px solid rgb(197, 194, 194);
+    padding-right: 8px;
+    margin-right: 8px;
+}
+
+.saleindin {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-right: 1px solid rgb(197, 194, 194);
+    padding-right: 8px;
+    margin-right: 8px;
+}
+
+.name_section_data {
+    display: flex;
+    align-items: center;
+    padding-left: 0 !important;
+}
+
+.name_image img {
+    width: 30px;
+    margin-right: 4px;
+}
+
+.icon_links {
+    display: flex;
+    align-items: center
+}
+
+.links_icon {
+    color: #fa6200;
+    margin-right: 3px;
+}
+
+.upcoming {
+    width: 95%;
+    /* margin: auto; */
+    border-radius: 10px;
+    background-color: var(--progress-bg-color);
+    text-align: center;
+    font-size: 13px;
+    color: #f89655;
+}
+
+.view:hover {
+    color: #000;
+}
+
+.cross_icon {
+    display: flex;
+    align-items: center;
+}
+
+.cross {
+    margin-right: 4px;
+    color: rgb(154, 156, 157);
+    cursor: pointer;
+}
+
+#check_green {
+    color: rgb(16, 185, 129);
+}
+
+#check_pink {
+    color: rgb(63, 129, 207);
+}
+
+.pagination {
+    padding: 0 28px;
+}
+
+@media screen and (max-width:768px){
+    .current_presale_main {
+        width: 100%!important;
+        padding: 6px;
+    }
+
+    
+}

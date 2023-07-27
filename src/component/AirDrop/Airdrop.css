@@ -1,0 +1,74 @@
+.airdrop_main{
+    width: 100%;
+    /* padding: 30px; */
+    display: block;
+}
+
+.airdrop_text_container p{
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 44px;
+    color: rgba(0, 0, 0, 0.85);
+}
+
+.airdrop_launched_section{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 10px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+}
+
+.airdrop_launched{
+    display: block;
+    text-align: center;
+    font-family: 'Segoe UI';
+    padding: 14px;
+}
+
+.particepants_in_all_time{
+    display: block;
+    text-align: center;
+    font-family: 'Segoe UI';
+    padding: 14px;
+}
+
+.all_launchpad_section_two{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.card_item_airdrop{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.launchpad_items{
+    padding: 7px;
+}
+
+@media screen and (max-width:768px){
+    .airdrop_text_container p{
+        padding: 16px;
+        font-size: 36px;
+    }
+
+    .all_launchpad_section{
+        overflow: scroll;
+        padding: 4px;
+    }
+    
+    .all_launchpad_section_two {
+        overflow: scroll;
+    }
+}

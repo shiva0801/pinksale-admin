@@ -1,0 +1,26 @@
+.footer{
+    padding-bottom: 40px;
+    margin-top: 50px!important;
+}
+
+
+.footer p {
+    text-align: center;
+    padding: 0px 97px;
+    font-family: 'Segoe UI';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.footer span {
+    color: #FA6200;
+}
+
+@media screen and (max-width: 576px) {
+   
+.footer p {
+    padding: 0px 20px;
+    line-height: 22px;
+}
+}

@@ -1,0 +1,75 @@
+.logout_container_main{
+    width: 100%;
+    padding: 10px;
+    margin-top: 50px;
+}
+
+.logout_top{
+   width: 100%;
+   padding: 14px;
+   display: block;
+   background-color: #ffffff;
+}
+
+.logout_top p{
+   padding-bottom: 25px;
+   border-bottom: 1px solid rgb(239, 238, 238);
+ }
+
+ .logout_button{
+    border-radius: 4px;
+    color: #000;
+    padding: 7px 14px!important;
+    margin: 16px 0;
+ }
+
+ .logout_button:hover{
+   background-color: rgb(242, 239, 239);
+   transition: all 0.4s;
+ }
+
+
+ .activities_container_bottom{
+    display: block;
+    margin-top: 20px;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 20px 14px;
+ }
+
+ .activities_container_bottom ul{
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    border-bottom: 1px solid rgb(238, 235, 235);
+    padding-bottom: 11px;
+ }
+
+ .activities_container_bottom ul li{
+   margin-right: 30px;
+ }
+
+ .activities_container_bottom ul li a{
+   color: #000;
+   font-family: 'Segoe UI';
+   font-size: 16px;
+   font-weight: 400;
+  }
+
+  .activities_container_bottom ul li a:hover{
+    color: #fa6200;
+   }
+
+  .activities a{
+    color: #fa6200!important;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #fa6200;
+  }
+ 
+   
+   
+  
+  
+ 
+
+ 

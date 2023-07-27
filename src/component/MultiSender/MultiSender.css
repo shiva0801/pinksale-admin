@@ -1,0 +1,128 @@
+.step-container {
+    padding-top: 5rem;
+}
+
+.token_address_container {
+    width: 100%;
+    display: block;
+    padding: 10px;
+    background-color: #ffffff;
+    margin-top: 40px;
+}
+
+label {
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Segoe UI';
+}
+
+.ant-form label {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.token_address_container p {
+    color: #3298dc;
+    font-size: 13px;
+}
+
+input {
+    font-size: 12px;
+}
+
+.allocation_section{
+    margin-top: 20px;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 10px 4px;
+    font-size: 14px;
+    color: #000;
+    margin-top: 7px;
+    border: 1px solid #cdcbcb;
+    border-radius: 8px;
+}
+
+textarea:hover {
+    border: 1px solid orangered;
+    transition: all 0.3s;
+}
+
+.choose_file_section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.csv_file_button {
+    padding: 8px 14px;
+    background: transparent;
+    margin-right: 12px;
+    color: grey;
+}
+
+.alert_messege_section_bottom {
+    width: 100%;
+    padding: 10px 16px;
+    background-color: #faf0cb;
+    border: 1px solid #c0960b;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.copy_icon {
+    color: orangered;
+    cursor: pointer;
+}
+
+.next_button_section {
+    width: 100%;
+    text-align: center;
+    margin-top: 16px;
+}
+
+.button_next {
+    padding: 6px 18px;
+    background: var(--disabled-bg);
+    border-color: rgba(0, 0, 0, .1);
+    /* color: var(--disabled-text-color); */
+    color: #000;
+    font-size: 15px;
+    font-family: 'Segoe UI';
+}
+
+
+.sample_csv_text_utton {
+    /* padding: 0 !important; */
+    border: none;
+    color: grey;
+    font-size: 15px;
+    font-family: 'Segoe UI';
+}
+
+@media screen and (max-width:576px){
+    label{
+        font-size: 16px;
+        font-weight: 600;
+        padding: 6px 0!important;
+    }
+
+    .alert_messege_section_bottom {
+        font-size: 10px;
+    }
+
+    .sample_csv_text_utton {
+        margin-top: 14px!important;
+    }
+
+    .step-container {
+        padding-top: 3rem;
+    }
+    
+}

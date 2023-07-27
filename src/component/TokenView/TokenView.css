@@ -1,0 +1,73 @@
+.tokenview_main {
+    width: 100%;
+    display: block;
+    margin-top: 50px;
+    background-color: #ffffff;
+}
+
+.lock_info {
+    width: 100%;
+    background-color: #ffffff;
+    font-size: 16px;
+    padding: 16px 18px;
+    padding-top: 0 !important;
+}
+
+.lock {
+    border-bottom: 1px solid rgb(234, 233, 233);
+    padding: 14px 18px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+table {
+    width: 100%;
+}
+
+tr td {
+    /* padding: 16px; */
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Segoe UI';
+    border-bottom: 1px solid rgb(234, 233, 233);
+}
+
+.right_data {
+    text-align: right;
+}
+
+/* LOCK RECORD */
+
+.lock_record {
+    width: 100%;
+    background-color: #ffffff;
+    margin-top: 20px;
+}
+
+.lock_table_data {
+    padding: 0 18px;
+}
+
+/* .pagination_container{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+} */
+
+.pagi_icon{
+    padding: 8px 10px;
+    border-radius: 4px;
+    background: var(--disabled-bg);
+    color: #000;
+    margin-left: 8px;
+    text-align: center;
+}
+
+@media screen and (max-width:768px){
+    table {
+        width: 100%!important;
+    }
+    
+}
