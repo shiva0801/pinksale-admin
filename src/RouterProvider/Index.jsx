@@ -26,6 +26,7 @@ import MainLayoutLaunchpad from "../../src/component/LaunchpadProtocol/MainLayou
 import PrivateLaunchpad from "../component/LaunchpadList/PrivateLaunchpad";
 import BlockedLaunchpad from "../component/BlockedLaunched/BlockedLaunched";
 import TopTrending from "../component/trending/TopTrending";
+import PlatformStatistics from "../component/PlatformStatistics/PlatformStatistics";
 
 export const router = createBrowserRouter([
   {
@@ -51,6 +52,10 @@ export const router = createBrowserRouter([
           {
             path: "DutchAuction",
             element: <DutchAuction />,
+          },
+          {
+            path: 'platformstatistics',
+            element: <PlatformStatistics />
           },
           {
             path: "createSubscription",

@@ -1,11 +1,10 @@
 import { Box } from '@mui/material'
 import React from 'react'
-import TopTrendingCard from './TopTrendingCard'
 import CardItemSection from '../LaunchpadList/CardItemSection';
 import AdvancedMode from '../LaunchpadList/AdvancesMode/AdvancedMode';
 import { Tabs } from 'antd';
-import TopTrendingBanner from './TopTrendingBanner';
-const TopTrending = () => {
+import TopTrendingCard from '../trending/TopTrendingCard';
+const PlatformStatistics = () => {
     const item = [{
         label: `All launchpads`,
         key: "656",
@@ -17,12 +16,12 @@ const TopTrending = () => {
     },
     ]
     return (
-        <Box sx={{ padding: '0' }}>
-            <TopTrendingBanner />
+        <Box>
+
             <div className='container'>
                 <div className='sub_container Current_Presales_section'>
                     <div className='heading'>
-                        <h1>Top Trendings</h1>
+                        <h1>Blocked Sales</h1>
                     </div>
                     <div className='all_launchpad_section'>
                         <Tabs
@@ -44,4 +43,4 @@ const TopTrending = () => {
     )
 }
 
-export default TopTrending
+export default PlatformStatistics
