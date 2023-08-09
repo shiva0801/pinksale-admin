@@ -52,4 +52,23 @@ Standard Token: https://testnet.bscscan.com/tx/0xf2472d601c501bc31776e65e1ca0351
 BuyBack Baby Token: https://testnet.bscscan.com/tx/0xedd58d37d85c0c252b36c3332aed9c17680bd2700821bb1ddbbb346a97c0298c
 
 ==> All Website Links <==
-Docs : 
+docs: https://docs.shibx.net/
+website: https://ico.shibx.net/
+admin: https://admin.shibx.net/
+api : https://api.shibx.live/
+
+Completed task
+1. backend structure and apis
+2. smart contract for ico
+3. frontend module around 80%
+4. admin structure and modules
+5. ico hosting in beta stage because still i have to do all the testnigs with smart contract
+
+pending tasks
+1. end User documentation
+2. admin panel only just started 
+3. ico panel end user testnigs
+4. multisender and airdrop contract integraion
+5. code optimaziton
+6. panel to auditers to audit contracts and upload data
+
