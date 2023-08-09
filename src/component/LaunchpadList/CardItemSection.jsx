@@ -7,12 +7,13 @@ const CardItemSection = () => {
   const { Option } = Select;
   const [active, setActive] = useState(1);
   const [icoData, seticoData] = useState(null)
-
+  const [val, setVal] = useState('Not Selected')
   const hendleActive = (val) => {
     setActive(val);
   };
-  function handleChange(value) {
-    console.log(`selected ${value}`);
+  const handleChange = (labelValue) => {
+    setVal(labelValue)
+    // console.log(`selected ${value}`);
   }
 
   const getData = async () => {
@@ -23,8 +24,13 @@ const CardItemSection = () => {
 
   useEffect(() => {
     getData();
-    return () => {};
+    return () => { };
   }, []);
+
+
+  const labels = ['filter by', 'pool type', 'sort by', 'chain']
+  const filterdata = ['filterOne', 'filterTwo', 'filterThree']
+
   return (
     <>
       <div className="main_input_box">
@@ -33,15 +39,17 @@ const CardItemSection = () => {
         </div>
 
         <div className="fillterVal">
-          <div className="subFillterVal">
-            <label>Filter By</label>
-            <Select defaultValue="No Filter" onChange={handleChange}>
-              <Option value="No Filter">No Filter</Option>
-              <Option value="No Filter">No Filter</Option>
-              <Option value="No Filter">No Filter</Option>
-            </Select>
-          </div>
-          <div className="subFillterVal">
+          {labels.map((label) => (
+            <div className="subFillterVal">
+              <label style={{ textTransform: 'capitalize' }}>{label}</label>
+              <Select value={val} onChange={handleChange}>
+                {filterdata.map((filter) => (
+                  <Option value={filter}>{filter}</Option>
+                ))}
+              </Select>
+            </div>
+          ))}
+          {/* <div className="subFillterVal">
             <label>Pool Type</label>
             <Select defaultValue="No Filter" onChange={handleChange}>
               <Option value="No Filter">No Filter</Option>
@@ -64,20 +72,20 @@ const CardItemSection = () => {
               <Option value="No Filter">No Filter</Option>
               <Option value="No Filter">No Filter</Option>
             </Select>
-          </div>
+          </div> */}
         </div>
       </div>
       <div className="card_Item">
         <Affiliate />{icoData ? (
-  icoData.map((curElm, index) => (
-    <React.Fragment key={curElm + index}>
-      <CardItem data={curElm} />
-    </React.Fragment>
-  ))
-) : (
-  <></>
-)}
-        
+          icoData.map((curElm, index) => (
+            <React.Fragment key={curElm + index}>
+              <CardItem data={curElm} />
+            </React.Fragment>
+          ))
+        ) : (
+          <></>
+        )}
+
 
         <Affiliate />
       </div>
