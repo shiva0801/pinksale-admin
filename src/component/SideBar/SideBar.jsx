@@ -31,19 +31,19 @@ const items = [
         key: "Create launchpad",
       },
       {
-        label: <Link to="/">Private LounchPad</Link>,
+        label: <Link to="privatelaunchpad">Private LounchPad</Link>,
         key: "Create Fair launch",
       },
     ],
   },
   {
-    label: <Link to="/">Blocked launchpad</Link>,
+    label: <Link to="blockedlaunchpad">Blocked launchpad</Link>,
     key: "Private Sale",
     icon: <ImEyeBlocked />,
   },
 
   {
-    label: <Link to="/">Top Trendings</Link>,
+    label: <Link to="toptrendingpage">Top Trendings</Link>,
     key: "trending",
     icon: <AiOutlineRise />,
   },

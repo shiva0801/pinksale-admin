@@ -23,6 +23,9 @@ import AdvancedContribution from "../component/LaunchpadList/AdvancedContributio
 import AdvancedMode from "../component/LaunchpadList/AdvancesMode/AdvancedMode";
 import TokenView from "../../src/component/TokenView/TokenView";
 import MainLayoutLaunchpad from "../../src/component/LaunchpadProtocol/MainLayoutLaunchpad";
+import PrivateLaunchpad from "../component/LaunchpadList/PrivateLaunchpad";
+import BlockedLaunchpad from "../component/BlockedLaunched/BlockedLaunched";
+import TopTrending from "../component/trending/TopTrending";
 
 export const router = createBrowserRouter([
   {
@@ -66,6 +69,19 @@ export const router = createBrowserRouter([
             element: <LaunchpadList />,
           },
           {
+            path: 'privatelaunchpad',
+            element: <PrivateLaunchpad />,
+          },
+          {
+            path: 'blockedlaunchpad',
+            element: <BlockedLaunchpad />
+          },
+
+          {
+            path: 'toptrendingpage',
+            element: <TopTrending />
+          },
+          {
             path: "createlock",
             element: <CreateLock />,
           },
@@ -89,7 +105,7 @@ export const router = createBrowserRouter([
             path: "buycryptofiat",
             element: <BuycryptoFiat />,
           },
-         
+
           {
             path: "lauchpad/:address",
             element: <Blog />,
