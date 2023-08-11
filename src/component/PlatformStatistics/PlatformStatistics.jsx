@@ -1,9 +1,12 @@
-import { Box } from '@mui/material'
-import React from 'react'
+import { Box, Container } from '@mui/material'
+import React, { useEffect, useState } from 'react'
 import CardItemSection from '../LaunchpadList/CardItemSection';
 import AdvancedMode from '../LaunchpadList/AdvancesMode/AdvancedMode';
 import { Tabs } from 'antd';
+import { Input, Select } from "antd";
 import TopTrendingCard from '../trending/TopTrendingCard';
+import { getMultipleIco, icoArray } from "../../App/redux/utils/contractUtils";
+
 const PlatformStatistics = () => {
     const item = [{
         label: `All launchpads`,
@@ -15,25 +18,52 @@ const PlatformStatistics = () => {
         children: <AdvancedMode />,
     },
     ]
-    return (
-        <Box>
 
-            <div className='container'>
-                <div className='sub_container Current_Presales_section'>
-                    <div className='heading'>
-                        <h1>Blocked Sales</h1>
-                    </div>
-                    <div className='all_launchpad_section'>
-                        <Tabs
-                            defaultActiveKey="1"
-                            items={item}
-                        />
-                    </div>
+    const { Option } = Select;
+    const [active, setActive] = useState(1);
+    const [icoData, seticoData] = useState(null)
+    const [val, setVal] = useState('Not Selected')
+    // const hendleActive = (val) => {
+    //     setActive(val);
+    // };
+    const handleChange = (labelValue) => {
+        setVal(labelValue)
+    }
+
+    const getData = async () => {
+        const data = await getMultipleIco(icoArray);
+        console.log("here is ico aaray", data)
+        seticoData(data);
+    };
+
+    useEffect(() => {
+        getData();
+        return () => { };
+    }, []);
+    const labels = ['filter by']
+    const filterdata = ['filterOne', 'filterTwo', 'filterThree']
+
+
+
+    return (
+
+
+
+        <Box>
+            <Box className="main_input_box" sx={{ marginBlock: '20px', padding: '0 70px', }}>
+                <div className="fillterVal">
+                    {labels.map((label) => (
+                        <div className="subFillterVal">
+                            <label style={{ textTransform: 'capitalize' }}>{label}</label>
+                            <Select value={val} onChange={handleChange}>
+                                {filterdata.map((filter) => (
+                                    <Option value={filter}>{filter}</Option>
+                                ))}
+                            </Select>
+                        </div>
+                    ))}
                 </div>
-                <div className='footer container'>
-                    <p>Disclaimer: Metasale_Admin will never endorse or encourage that you invest in any of the projects listed and therefore, accept no liability for any loss occasioned. It is the user(s) responsibility to do their own research and seek financial advice from a professional. More information about (DYOR) can be found via <span>Binance Academy</span></p>
-                </div>
-            </div>
+            </Box>
 
             <Box sx={{ marginBottom: 10 }}>
                 <TopTrendingCard />

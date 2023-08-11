@@ -3,6 +3,7 @@ import Affiliate from "./Affiliate/Affiliate";
 import CardItem from "./cards/CardItem";
 import { Input, Select } from "antd";
 import { getMultipleIco, icoArray } from "../../App/redux/utils/contractUtils";
+
 const CardItemSection = () => {
   const { Option } = Select;
   const [active, setActive] = useState(1);

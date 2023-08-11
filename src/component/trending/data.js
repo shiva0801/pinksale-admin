@@ -62,17 +62,17 @@ export const tableData = [
         data: '0x0362CBbD7F396B923a79054D43759bCDeFA745c1',
     },
     {
-        sno: 1,
+        sno: 2,
         name: 'example',
         data: '0x0362CBbD7F396B923a79054D43759bCDeFA745c1',
     },
     {
-        sno: 1,
+        sno: 3,
         name: 'example',
         data: '0x0362CBbD7F396B923a79054D43759bCDeFA745c1',
     },
     {
-        sno: 1,
+        sno: 4,
         name: 'example',
         data: '0x0362CBbD7F396B923a79054D43759bCDeFA745c1',
     }
