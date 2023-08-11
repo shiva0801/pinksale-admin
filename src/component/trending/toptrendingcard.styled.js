@@ -49,8 +49,6 @@ export const BannerWraper = styled(Box)({
     display: 'flex',
     alignItems: 'center',
     backgroundColor: '#fff',
-    boxShadow: `0 0 1px rgba(0,0,0,.01),
-    0 4px 8px rgba(0,0,0,.01),
-     0 8px 12px rgba(0,0,0,.01),
-      0 12px 16px rgba(0,0,0,.01)`,
+    boxShadow: '1px -1px 2px 2px #cccccc3d',
+    borderTop: ' 1px solid #cccccc3d'
 })

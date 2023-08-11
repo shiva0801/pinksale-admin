@@ -27,6 +27,7 @@ import PrivateLaunchpad from "../component/LaunchpadList/PrivateLaunchpad";
 import BlockedLaunchpad from "../component/BlockedLaunched/BlockedLaunched";
 import TopTrending from "../component/trending/TopTrending";
 import PlatformStatistics from "../component/PlatformStatistics/PlatformStatistics";
+import LogsPage from "../component/LogsPage/LogsPage";
 
 export const router = createBrowserRouter([
   {
@@ -56,6 +57,10 @@ export const router = createBrowserRouter([
           {
             path: 'platformstatistics',
             element: <PlatformStatistics />
+          },
+          {
+            path: 'logspage',
+            element: <LogsPage />
           },
           {
             path: "createSubscription",

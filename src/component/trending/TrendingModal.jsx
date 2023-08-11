@@ -5,7 +5,7 @@ import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
 import { Button, Grid, Paper, Table, TableBody, TableCell, TableContainer, TableHead, TableRow } from '@mui/material';
 import { tableheading, tableData } from './data'
-console.log(tableData?.[0].data.length, 'lkahsdjkfasdlkf')
+
 const TrendingModal = ({ open, setOpen }) => {
     const handleModalClose = () => {
         setOpen(false)
@@ -49,11 +49,12 @@ const TrendingModal = ({ open, setOpen }) => {
                                                 <TableCell align="center">{(data?.data.length >= 20) ? data?.data.slice(0, 20) + '.....' : data?.data} </TableCell>
                                                 <TableCell align="center"> <Button variant='contained' sx={{
                                                     backgroundColor: '#f89dac',
+                                                    fontSize: '12px',
+                                                    border: '1px solid #ffffff',
                                                     '&:hover': {
                                                         backgroundColor: 'transparent',
                                                         color: '#f89dac',
                                                         border: '1px solid #f89dac',
-                                                        fontSize: '12px'
                                                     },
                                                 }} size="small">set</Button> </TableCell>
                                             </TableRow>
@@ -65,10 +66,6 @@ const TrendingModal = ({ open, setOpen }) => {
                         </Grid>
                     </Grid>
                 </DialogContent>
-                {/* <DialogActions>
-                    <Button>Cancel</Button>
-                    <Button>Subscribe</Button>
-                </DialogActions> */}
             </Dialog>
         </div>
     );

@@ -71,7 +71,7 @@ const items = [
     icon: <CgWebsite />,
   },
   {
-    label: <Link to="/">Logs</Link>,
+    label: <Link to="logspage">Logs</Link>,
     key: "MultiSender",
     icon: <FaHistory />,
   },
