@@ -66,7 +66,7 @@ const items = [
     icon: <MdLeaderboard />,
   },
   {
-    label: <Link to="/">Platform Statistics</Link>,
+    label: <Link to="platformstatistics">Platform Statistics</Link>,
     key: "Anti-Bot",
     icon: <CgWebsite />,
   },
