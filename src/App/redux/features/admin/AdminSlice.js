@@ -1,108 +1,84 @@
-import { createAsyncThunk } from "@reduxjs/toolkit";
-import axiosInstance from "../../../../axios/AxiosInstace";
+import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
+import Web3 from "web3";
 
-export const getTrendingData = createAsyncThunk(
-  "admin/trendingData",
-  async () => {
+const initialState = {
+  Wallet: null,
+  tokenDetails: null,
+  formTokenDetails:null,
+};
+
+export const fetchTokenDetails = createAsyncThunk(
+  "todo/fetchTokenDetails",
+  async (tokenAddress, thunkAPI) => {
     try {
-      const apiResponse = await axiosInstance.get("/admin/get-trending-data");
-      return apiResponse;
-    } catch (err) {
-      if (err) {
-        throw err;
-      }
+      const web3 = new Web3("https://data-seed-prebsc-1-s1.binance.org:8545");
+
+      const contract = new web3.eth.Contract(
+        [
+          {
+            constant: true,
+            inputs: [],
+            name: "name",
+            outputs: [{ name: "", type: "string" }],
+            payable: false,
+            stateMutability: "view",
+            type: "function",
+          },
+          {
+            constant: true,
+            inputs: [],
+            name: "symbol",
+            outputs: [{ name: "", type: "string" }],
+            payable: false,
+            stateMutability: "view",
+            type: "function",
+          },
+          {
+            constant: true,
+            inputs: [],
+            name: "decimals",
+            outputs: [{ name: "", type: "uint8" }],
+            payable: false,
+            stateMutability: "view",
+            type: "function",
+          },
+        ],
+        tokenAddress
+      );
+
+      const name = await contract.methods.name().call();
+      const symbol = await contract.methods.symbol().call();
+      const decimals = await contract.methods.decimals().call();
+
+      return {
+        name,
+        symbol,
+        decimals,
+      };
+    } catch (error) {
+      console.log("Error fetching token details:", error);
+      throw error;
     }
   }
 );
 
-export const blockIco = createAsyncThunk("admin/blockIco", async () => {
-  try {
-    const apiResponse = await axiosInstance.get("/admin/get-trending-data");
-    return apiResponse;
-  } catch (err) {
-    if (err) {
-      throw err;
+const adminApiSlice = createSlice({
+  name: "adminApi",
+  initialState,
+  reducers: {
+    addTokenDetails: (state, action) => {
+      state.tokenDetails = action.payload;
     }
-  }
+  },
+  extraReducers: (builder) => {
+    builder.addCase(fetchTokenDetails.fulfilled, (state, action) => {
+      state.tokenDetails = action.payload;
+    });
+    builder.addCase(fetchTokenDetails.rejected, (state, action) => {
+      state.tokenDetails = null;
+    });
+  },
 });
 
-export const serachIco = createAsyncThunk("admin/trendingData", async () => {
-  try {
-    const apiResponse = await axiosInstance.get("/admin/get-trending-data");
-    return apiResponse;
-  } catch (err) {
-    if (err) {
-      throw err;
-    }
-  }
-});
-
-export const getIcoStatics = createAsyncThunk(
-  "admin/trendingData",
-  async () => {
-    try {
-      const apiResponse = await axiosInstance.get("/admin/get-trending-data");
-      return apiResponse;
-    } catch (err) {
-      if (err) {
-        throw err;
-      }
-    }
-  }
-);
-
-export const blockAirdrop = createAsyncThunk(
-  "admin/trendingData",
-  async () => {
-    try {
-      const apiResponse = await axiosInstance.get("/admin/get-trending-data");
-      return apiResponse;
-    } catch (err) {
-      if (err) {
-        throw err;
-      }
-    }
-  }
-);
-
-export const unblockAirdrop = createAsyncThunk(
-  "admin/trendingData",
-  async () => {
-    try {
-      const apiResponse = await axiosInstance.get("/admin/get-trending-data");
-      return apiResponse;
-    } catch (err) {
-      if (err) {
-        throw err;
-      }
-    }
-  }
-);
-
-export const unblockIco = createAsyncThunk(
-  "admin/trendingData",
-  async () => {
-    try {
-      const apiResponse = await axiosInstance.get("/admin/get-trending-data");
-      return apiResponse;
-    } catch (err) {
-      if (err) {
-        throw err;
-      }
-    }
-  }
-);
-
-export const changeTrendingData = createAsyncThunk(
-  "admin/trendingData",
-  async () => {
-    try {
-      const apiResponse = await axiosInstance.get("/admin/get-trending-data");
-      return apiResponse;
-    } catch (err) {
-      if (err) {
-        throw err;
-      }
-    }
-  }
-);
+export const { addTodo, deleteTodo } = adminApiSlice.actions;
+export default adminApiSlice.reducer;

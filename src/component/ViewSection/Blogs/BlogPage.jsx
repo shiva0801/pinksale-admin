@@ -373,60 +373,17 @@ const Blog = () => {
               </div>
             </div>
           </div>
-          <div className="faq_section">
-            <div className="ant-card-head-wrapper">
-              <div className="ant-card-head-title">
-                <h3>Frequently Asked Question</h3>
-              </div>
-            </div>
-            <BlogCollapse />
-           
-          </div>
-          <div className="disqus_div">
-            <DisqusCommentSection/>
-            </div>
+        
+         
         </div>
         
         <div className="view_details_right">
           <div className="cart_div">
-            <div className="cart_heading_div">
-              <p>Make sure the website is Metasale_Admin.finance!</p>
-            </div>
-            <div className="timer_div">
-              <div>
-                <p>Presale Starts In</p>
-                <div className="timer_inner_div">
-                  <div className="tm_div">
-                    <p>00</p>
-                  </div>
-                  <div className="tm_div">
-                    <p>00</p>
-                  </div>
-                  <div className="tm_div">
-                    <p>00</p>
-                  </div>
-                  <div className="tm_div">
-                    <p>00</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="progress_outer">
-              <div className="progress_inner"></div>
-            </div>
-            <div className="bnb">
-              <div>0 BNB</div>
-              <div>20 BNB</div>
-            </div>
-            <form action="">
-              <label htmlFor="Amount">
-                <strong>Amount</strong>
-              </label>
-              <br />
-              <input type="text" />
-            </form>
+          
+         
+            
             <div className="connect_wallet_button">
-              <button className="connect_wallet">Connect Wallet</button>
+              <button className="connect_wallet">Statistics</button>
             </div>
           </div>
           <div className="cart_view">
@@ -461,64 +418,7 @@ const Blog = () => {
               </table>
             </div>
           </div>
-          <div className="cart_view">
-            <div className="owner_zone">
-              <p>Owner Zone</p>
-            </div>
-            <div className="owner_zone_description">
-              <div className="paragraph_section">
-                <p>
-                  To make sure there will be no issues during the presale time,
-                  please do not send tokens to wallets before you finalize the
-                  presale pool.
-                </p>
-              </div>
-              <div className="pool_free_section">
-                <p>Pool Fee: 5% BNB raised only</p>
-              </div>
-              <div className="sale_Type_input">
-                <label className="sale_type" htmlFor="saletype">
-                  Sale Type
-                </label>
-                <div className="checkbutton">
-                  <span>
-                    <input className="public" type="radio" />
-                  </span>
-                  <span className="public_text">Public</span>
-                  <span>
-                    <input className="whitelist" type="radio" />
-                  </span>
-                  <span className="whitelist_text">Whitelist</span>
-                </div>
-                <div className="pool_action_main">
-                  <label htmlFor="Pool Actions">
-                    <strong>Pool Actions</strong>
-                  </label>
-                  <div className="pool_action_details">
-                    <a href="#">Enable aFFILIATE Program</a>
-                  </div>
-                  <div className="pool_action_details">
-                    <a href="#">ool Start/End Time Setting</a>
-                  </div>
-                  <div
-                    className="pool_action_details"
-                    style={{ backgroundColor: "#f5f5f5" }}
-                  >
-                    <a href="#">Finalize</a>
-                  </div>
-                  <div className="pool_action_details">
-                    <a href="#">ancel Pool</a>
-                  </div>
-                </div>
-                <div className="bottom_text">
-                  <p>
-                    To Finalize presale, you have to exclude token transfer fee
-                    for presale contract.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+        
         </div>
         <div></div>
       </div>)}

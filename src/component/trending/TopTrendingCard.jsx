@@ -9,7 +9,7 @@ import {
 import { trendingdata } from "./data";
 import TrendingModal from "./TrendingModal";
 
-const TopTrendingCard = () => {
+const TopTrendingCard = (children) => {
   const [open, setOpen] = React.useState(false);
   const handlerTrendingModal = () => {
     setOpen(true);
