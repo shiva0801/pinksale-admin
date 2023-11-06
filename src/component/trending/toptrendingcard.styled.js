@@ -1,5 +1,6 @@
-import { Button, Card, Typography } from '@mui/material'
+import { Box, Button, Card, Typography } from '@mui/material'
 import styled from '@mui/material/styles/styled'
+
 
 export const TredingCard = styled(Card)({
     boxShadow: `0 0 1px rgba(0,0,0,.01),
@@ -41,4 +42,13 @@ export const CustomButton = styled(Button)({
         color: '#fff',
         backgroundColor: '#f89dac'
     }
+})
+
+export const BannerWraper = styled(Box)({
+    width: '100%',
+    display: 'flex',
+    alignItems: 'center',
+    backgroundColor: '#fff',
+    boxShadow: '1px -1px 2px 2px #cccccc3d',
+    borderTop: ' 1px solid #cccccc3d'
 })

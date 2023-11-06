@@ -1,17 +1,14 @@
 import React, { useState } from "react";
-import { GiAirBalloon } from "react-icons/gi";
 import { FaHistory } from "react-icons/fa";
 import { ImEyeBlocked } from "react-icons/im";
 import { CgWebsite } from "react-icons/cg";
 import { MdLeaderboard } from "react-icons/md";
 import { AiOutlineRise, AiFillGift } from "react-icons/ai";
-
 import {
   HomeOutlined,
   RocketOutlined,
   UnlockOutlined,
 } from "@ant-design/icons";
-
 import { Menu } from "antd";
 import { Link } from "react-router-dom";
 
@@ -66,12 +63,12 @@ const items = [
     icon: <MdLeaderboard />,
   },
   {
-    label: <Link to="/">Platform Statistics</Link>,
+    label: <Link to="platformstatistics">Platform Statistics</Link>,
     key: "Anti-Bot",
     icon: <CgWebsite />,
   },
   {
-    label: <Link to="/">Logs</Link>,
+    label: <Link to="logspage">Logs</Link>,
     key: "MultiSender",
     icon: <FaHistory />,
   },
