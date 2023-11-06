@@ -4,7 +4,7 @@ import { AiOutlineRise } from "react-icons/ai";
 import { Link } from 'react-router-dom'
 import { BannerWraper } from './toptrendingcard.styled'
 import { trending } from './data'
-import styled from '@emotion/styled'
+
 
 const TopTrendingBanner = () => {
 

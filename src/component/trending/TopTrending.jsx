@@ -1,22 +1,10 @@
 import { Box } from "@mui/material";
 import React from "react";
 import TopTrendingCard from "./TopTrendingCard";
-import CardItemSection from "../LaunchpadList/CardItemSection";
-import AdvancedMode from "../LaunchpadList/AdvancesMode/AdvancedMode";
-import { Tabs } from "antd";
+
+
 const TopTrending = () => {
-  const item = [
-    {
-      label: `All launchpads`,
-      key: "656",
-      children: <CardItemSection />,
-    },
-    {
-      label: `Advanced Mode`,
-      key: "666",
-      children: <AdvancedMode />,
-    },
-  ];
+  
   return (
     <Box>
       <div className="container">

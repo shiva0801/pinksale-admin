@@ -1,28 +1,14 @@
-import { Box, Container } from "@mui/material";
+import { Box } from "@mui/material";
 import React, { useEffect, useState } from "react";
-import CardItemSection from "../LaunchpadList/CardItemSection";
-import AdvancedMode from "../LaunchpadList/AdvancesMode/AdvancedMode";
-import { Tabs } from "antd";
-import { Input, Select } from "antd";
+import {  Select } from "antd";
 import TopTrendingCard from "../trending/TopTrendingCard";
 import { getMultipleIco, icoArray } from "../../App/redux/utils/contractUtils";
 
 const PlatformStatistics = () => {
-  const item = [
-    {
-      label: `All launchpads`,
-      key: "656",
-      children: <CardItemSection />,
-    },
-    {
-      label: `Advanced Mode`,
-      key: "666",
-      children: <AdvancedMode />,
-    },
-  ];
+  
 
   const { Option } = Select;
-  const [active, setActive] = useState(1);
+
   const [icoData, seticoData] = useState(null);
   const [val, setVal] = useState("Not Selected");
   // const hendleActive = (val) => {

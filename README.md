@@ -1,71 +1,73 @@
-# Getting Started with Create React App
+# PinkSale Module Overview Details
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Completed Tasks**
+1. Backend structure and APIs
+2. Smart contract for ICO
+3. Frontend module (around 80% completed)
+4. Admin structure and modules
+5. ICO hosting in beta stage (pending testing with smart contract)
 
-## Available Scripts
+**Pending Tasks**
+1. End User Documentation
+2. Admin Panel (just started)
+3. ICO Panel end-user testing
+4. Multisender and Airdrop contract integration
+5. Code optimization
+6. Panel for auditors to audit contracts and upload data
 
-In the project directory, you can run:
+**Token Options => 4**
+1. Standard Tokens
+2. BuyBack Tokens
+3. Baby Tokens
+4. Liquidity Generator Token
 
-### `npm start`
+**ICO Option and Interconnection**
+* All ICOs are connected to the token locker to fetch locking data easily.
+* All ICOs are deployed from the parent contract instance. This ensures that no one can manipulate the ICO contract and also helps maintain records.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+**ICO Options**
+1. LaunchPad
+2. FairLaunch
+3. DutchAuction
+4. PrivateSale
+5. Subscription
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+**Other Options**
+* Multisender
+* Airdrops
 
-### `npm test`
+**Panels for Pinksale**
+* Admin Panel
+* Audit and KYC Panels, which will be distributed to auditors and KYC partners.
+* User Panel or Client Panel
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**Controls in User Panel**
+All functionality of Pinksale
 
-### `npm run build`
+**Controls in Admin Panel**
+1. Admin can check the status of all live ICOs and also blacklist ICOs from the platform, making specific ICOs unavailable.
+2. Add new KYC and Auditing Partners and check statistics of those Partners.
+3. Admin can check all information and control the trending list of ICO Platform.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**Controls in KYC and Auditing Panel**
+1. Add an audit of a specific coin or ICO.
+2. Track all ICOs that have been audited by that auditing team or partner.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**All GitHub Repositories**
+- [Pinksale-Kyc-Panel](https://github.com/web5lab/Pinksale-Kyc-Panel)
+- [Pinksale-Admin](https://github.com/web5lab/Pinksale-Admin)
+- [pinksale_backend](https://github.com/web5lab/pinksale_backend)
+- [pinksale_SmartContract](https://github.com/web5lab/pinksale_SmartContract)
+- [pinksale-frontend](https://github.com/Dsahrath-Metaversity/pinksale-frontend)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**Token Deployment Links**
+- Liquidity Generator Token: [Link](https://testnet.bscscan.com/tx/0x653ffda81b24878d24b1239d7cb91eeae3aa694474f707baecf8f12a8e741bdd)
+- Baby Token: [Link](https://testnet.bscscan.com/tx/0x30f0349b1c25938f2ae4709a818fba854143ad14b3b65a5ab5060836fd62a5a1)
+- Standard Token: [Link](https://testnet.bscscan.com/tx/0xf2472d601c501bc31776e65e1ca03519cfcedb13d0c3ffb3346ec2282d5f1488)
+- BuyBack Baby Token: [Link](https://testnet.bscscan.com/tx/0xedd58d37d85c0c252b36c3332aed9c17680bd2700821bb1ddbbb346a97c0298c)
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# pinksale-admin
+**All Website Links**
+- Docs: [Link](https://docs.shibx.net/)
+- Website: [Link](https://ico.shibx.net/)
+- Admin: [Link](https://admin.shibx.net/)
+- API: [Link](https://api.shibx.live/)

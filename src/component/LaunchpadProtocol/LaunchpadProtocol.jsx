@@ -4,18 +4,22 @@ import './LaunchpadProtocol.css'
 
 const LaunchpadProtocol = () => {
   return (
-    <div className='launchpad_section'>
-      <div className='container'>
-        <div className='launchpad_main'>
-          <div className='launchpad_protocol_text'>
-            
-            <h1>MetaSale Admin Panel</h1>
-           
-          </div>
-        </div>
-
-     
-
+    <div className='totle_description_container'>
+      <div className='item_description'>
+     <h2>$510.9M</h2>
+     <p>Total Liquidity Raised</p>
+      </div>
+      <div className='item_description'>
+      <h2>15862</h2>
+     <p>Total Project</p>
+      </div>
+      <div className='item_description'>
+      <h2> 1.7M</h2>
+     <p>Total Participants</p>
+      </div>
+      <div className='item_description'>
+      <h2>$263.3M</h2>
+     <p>Total Values Locked</p>
       </div>
     </div>
   )

@@ -1,25 +1,19 @@
 import React, { useEffect, useState } from "react";
 import "./Blog.css";
-import viewLeftimage from "../../../Images/viewLeftimage.png";
-import { AiOutlineLock } from "react-icons/ai";
 import { FiTwitter } from "react-icons/fi";
 import { CiFacebook } from "react-icons/ci";
 import { FaTelegramPlane } from "react-icons/fa";
 import { FiGithub } from "react-icons/fi";
 import { AiOutlineInstagram } from "react-icons/ai";
-import { RiDiscordFill } from "react-icons/ri";
 import { TfiReddit, TfiWorld } from "react-icons/tfi";
 import { Link } from "react-router-dom";
 import { AiOutlineHeart } from "react-icons/ai";
 import { GoPrimitiveDot } from "react-icons/go";
-import { Card } from "antd";
 import { GrFormDown } from "react-icons/gr";
-import Footer from "../../footer/Footer";
 import { CChart } from "@coreui/react-chartjs";
-import BlogCollapse from "./BlogCollapse";
 import { useParams } from "react-router-dom";
 import { getIcoDetails } from "../../../App/redux/utils/contractUtils";
-import DisqusCommentSection from "../../disquss/DisqusCommentSection";
+
 const BigInt = window.BigInt || null;
 
 const Blog = () => {
